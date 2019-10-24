@@ -54,9 +54,6 @@ body .container {
   font-family: "Trebuchet MS", arial;
   box-shadow: 5px 2px 30px 3px rgba(0, 0, 0, 0.4);
 }
-body .container .form {
-  margin-top: 45px;
-}
 body .container .header {
   display: flex;
   align-items: center;
@@ -177,8 +174,11 @@ body .container .main-columns .right-column .icons li:hover {
   color: #000;
   background: #fff;
 }
-input,
-textarea {
+.form {
+  margin-top: 45px;
+}
+.form input,
+.form textarea {
   padding: 9px;
   border: 1px solid #ccc;
   outline: 0;
@@ -186,7 +186,7 @@ textarea {
   font: normal 13px/100% Verdana, Tahoma, sans-serif;
   width: 240px;
 }
-textarea {
+.form textarea {
   width: 240px;
   height: 60px;
   line-height: 150%;
@@ -196,13 +196,13 @@ textarea {
   min-width: 240px;
   background: #A64826;
 }
-input:hover,
-textarea:hover,
-input:focus,
-textarea:focus {
+.form input:hover,
+.form textarea:hover,
+.form input:focus,
+.form textarea:focus {
   border-color: #999;
 }
-.submit input {
+.form .button input {
   padding: 7px 9px;
   width: 60px;
   cursor: pointer;
@@ -213,11 +213,11 @@ textarea:focus {
   font-weight: bold;
   text-transform: uppercase;
 }
-.submit input:hover {
+.form .button input:hover {
   background: #666;
   color: #FFF;
 }
-.contact_text {
+.form .contact_text {
   width: 330px;
 }
 .progress-bar {
