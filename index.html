@@ -1,19 +1,119 @@
 <!doctype html>
 
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
 
   <title>My Resume</title>
 
-  <link rel="stylesheet" href="css/index.css">
+  <link href="less/index.css" rel="stylesheet">
+  <link href="less/index.less" rel="stylesheet/less">
+  <script src="js/jquery.min.js"></script>
+  <link href="webfonts" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Bungee+Inline|Meddon|Shrikhand&display=swap" rel="stylesheet">
 
-  <!--[if lt IE 9]>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
-  <![endif]-->
+
 </head>
+</br>
 
-<body>
-  <h1>My Resume</h1>
+<body style="background:url('img/bbg.png'); ">
+  <div class="container" style="background:url('img/resbg.png')">
+    <div class="header">
+      <div class="p1">
+      <h1>Mickey Groff</h1>
+      <h3>FullStack Developer</h3>
+    </div>
+    <div class="p2">
+      <a class="nav" href="#">Check Here</a>
+      <a class="nav" href="#">Cool Stuff</a>
+      <a class="nav" href="#">Hahaha!</a>
+      <a class="nav" href="#">OH NO!</a>
+    </div>
+  </div>
+
+    <div class="main-columns">
+      <div class="left-column">
+        <img class="profile" src="img/7.png" class="smile" width="220" height="220">
+        <div>
+          </br>
+          <h2>Profesional Skills</h2>
+          </br>
+          <h4>HTML</h4>
+          <div class="progress-bar green">
+            <span style="width: 90%"></span>
+          </div>
+          <h4>CSS</h4>
+          <div class="progress-bar orange">
+            <span style="width: 80%"></span>
+          </div>
+          <h4>Javascript</h4>
+          <div class="progress-bar red">
+            <span style="width: 60%"></span>
+          </div>
+          <h4>PHP</h4>
+          <div class="progress-bar orange">
+            <span style="width: 30%"></span>
+          </div>
+        </div>
+
+        <h3>Send Me An Email Im Lonely</h3>
+
+        <form class="form" action="#">
+          <p class="name"><input type="text" name="name" id="name" value="Name" /></p>
+
+          <p class="email"><input type="text" name="email" id="email" value="E-mail" /></p>
+
+          <p class="text">
+            <textarea name="text" rows="" cols="">Text
+  </textarea></p>
+
+        <input type="submit" value="Send" />
+        </form>
+      </div> 
+    
+      <div class="right-column">
+        </br></br> <a href="https://groffspace.com"><h3>You can find my portfolio by clicking here! </h3></a>
+        <div class="ed">
+        <h3>Education</h3></br>
+        <p>Bachelors in Electronic Engineering</p></br>
+        <p>Currently Enrolled at Lambda School Working on the Full Stack Web Dev Course They Offer!</p></br></br>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam a pulvinar
+          tellus. Donec laoreet posuere felis, sit amet convallis urna porta
+          in.</p>
+        </div>
+        <div class="history">
+     
+        <p class="c_text1">Sed cursus quam ac nibh convallis vitae faucibus quam
+          condimentum. Nulla elementum ultrices fermentum. Nulla non dolor odio, quis
+          dictum dui. Aenean venenatis convallis diam eget sagittis. Donec iaculis felis
+          a est ultrices dapibus.</p>
+          <p class="c_text2">Sed cursus quam ac nibh convallis vitae faucibus quam
+              condimentum. Nulla elementum ultrices fermentum. Nulla non dolor odio, quis
+              dictum dui. Aenean venenatis convallis diam eget sagittis. Donec iaculis felis
+              a est ultrices dapibus.</p>
+              <p class="c_text3">Sed cursus quam ac nibh convallis vitae faucibus quam
+                  condimentum. Nulla elementum ultrices fermentum. Nulla non dolor odio, quis
+                  dictum dui. Aenean venenatis convallis diam eget sagittis. Donec iaculis felis
+                  a est ultrices dapibus.</p>
+<h3>Find Me On Social Media</h3>
+</div>
+        <ul class="icons">
+          <li><a href="https://twitter.com/M_Groff"><img src="img/tw.png" width="50" height="50"></a></li>
+          <li><a href="https://www.facebook.com/mick.groff.3"><img src="img/fbook.png" width="50" height="50"></a></li>
+          <li><a href="https://www.instagram.com/mickeygroff/"><img src="img/insta.png" width="50" height="50"></a></li>
+          <li><a href="https://github.com/mgroff1?tab=repositories"><img src="img/git.png" width="50" height="50"></a>
+          </li>
+          <li><a href="https://www.linkedin.com/in/mick-groff-10139223/"><img src="img/linked.png" width="50"
+                height="50"></a></li>
+
+        </ul>
+      </div>
+
+
+
+      <script src="main.js"></script>
 </body>
+
 </html>
