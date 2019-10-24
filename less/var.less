@@ -1,0 +1,41 @@
+
+/*-------Mix-Ins ------------*/
+
+
+
+:root{
+	font-size:62.5%;
+}
+
+@orb:'Orbitron', sans-serif;
+@vil:'Vidaloka', serif;
+   
+
+
+
+.border-radius (@radius: 3px) {
+  -webkit-border-radius: @radius;
+  -moz-border-radius: @radius;
+  border-radius: @radius;
+  box-shadow:.5px .35px 20px 1px gray;
+ }
+  
+ 
+ img{
+  .border-radius(20px);
+ } 
+ 
+ /*------color-scheme ------*/
+ @base:#A64826;
+ @complement1: darken(spin(@base, 180), 15%);
+ @complement2: darken(spin(@base, 180), 5%);
+ @lighten1: lighten(@base, 15%);
+ @lighten2: lighten(@base, 30%);
+   
+ .font-size(@sizeValue) {
+	@remValue: @sizeValue;
+	@pxValue: (@sizeValue * 10);
+	font-size: ~"@{pxValue}px"; 
+	font-size: ~"@{remValue}rem";
+  }
+ 
