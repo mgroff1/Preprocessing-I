@@ -3,7 +3,7 @@
 :root{
 	font-size:62.5%;
 }
-
+@small: ~"(max-width:  500px) and (min-width:300px)";
 @orb:'Orbitron', sans-serif;
 @vil:'Vidaloka', serif;
    
@@ -95,6 +95,8 @@ body{
 		.border-radius(5px);
 		background:linear-gradient(165deg, #972F00 15%, rgba(239,238,238,0.94) 68%);
 
+		
+		
 				.p1{
 					display:flex;
 					flex-direction:column;
@@ -196,6 +198,13 @@ body{
 	}
 }
 
+
+@media @small{
+	.main-columns{
+		display:flex;
+		flex-direction:column;
+	}
+}
 /*----------Gallery------------*/
 
 .gallery {

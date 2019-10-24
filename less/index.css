@@ -150,6 +150,12 @@ body .container .main-columns .right-column .icons li:hover {
   transform: scale(1.2);
   transition: all 1s ease-in-out;
 }
+@media (max-width:  500px) and (min-width:300px) {
+  .main-columns {
+    display: flex;
+    flex-direction: column;
+  }
+}
 /*----------Gallery------------*/
 .gallery {
   display: flex;
